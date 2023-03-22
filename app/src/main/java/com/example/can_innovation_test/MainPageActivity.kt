@@ -45,24 +45,6 @@ class MainPageActivity : AppCompatActivity() {
     }
 
     private fun observe() {
-//        binding.apply {
-//            viewModel.apply {
-//                name.observe(this@MainPageActivity) { name ->
-//                    mainFullName.text = name
-//                }
-//                email.observe(this@MainPageActivity) { email ->
-//                    mainEmail.text = email
-//                }
-//                dob.observe(this@MainPageActivity) { dob ->
-//                    mainDob.text = dob
-//                }
-//                phoneNum.observe(this@MainPageActivity) { phoneNum ->
-//                    mainPhoneNum.text = phoneNum
-//
-//                }
-//            }
-//
-//        }
         viewModel.apply {
             name.observe(this@MainPageActivity) { name ->
                 binding.mainFullName.text = "Username: " + name
